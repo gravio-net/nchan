@@ -56,7 +56,7 @@ With a well-tuned OS and network stack on commodity server hardware, expect to h
 #### Build From Source
 Grab the latest copy of Nginx from [nginx.org](http://nginx.org). Grab the latest Nchan source from [github](https://github.com/slact/nchan/releases). Follow the instructions for [building Nginx](https://www.nginx.com/resources/wiki/start/topics/tutorials/install/#source-releases), except during the `configure` stage, add
 ```
-./configure --add-module=path/to/nchan ...
+./configure --add-module=/path/to/nchan --without-http_rewrite_module --with-http_ssl_module
 ```
 
 If you're using Nginx  > 1.9.11, you can build Nchan as a [dynamic module](https://www.nginx.com/blog/dynamic-modules-nginx-1-9-11/) with `--add-dynamic-module=path/to/nchan`
