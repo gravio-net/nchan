@@ -64,6 +64,14 @@ PS. May be you need to setup PCRE lib (http_rewrite_module):
 apt-get install libpcre3 libpcre3-dev
 ```
 
+PPS. And for the ruby fcgi you may need to install:
+```
+sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev nodejs ruby-all-dev ruby
+sudo apt-get install libfcgi-dev
+sudo gem install web3 -v 0.1.0
+sudo gem install httparty
+```
+
 If you're using Nginx  > 1.9.11, you can build Nchan as a [dynamic module](https://www.nginx.com/blog/dynamic-modules-nginx-1-9-11/) with `--add-dynamic-module=path/to/nchan`
 
 Run `make`, then `make install`.
