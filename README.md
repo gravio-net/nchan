@@ -70,6 +70,12 @@ sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libread
 sudo apt-get install libfcgi-dev
 sudo gem install web3 -v 0.1.0
 sudo gem install httparty
+sudo gem install fcgi
+```
+
+PPPS. fcgiwrap you may need to install:
+```
+aptitude install fcgiwrap
 ```
 
 If you're using Nginx  > 1.9.11, you can build Nchan as a [dynamic module](https://www.nginx.com/blog/dynamic-modules-nginx-1-9-11/) with `--add-dynamic-module=path/to/nchan`
